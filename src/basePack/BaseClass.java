@@ -8,16 +8,19 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
 	public WebDriver driver;
+	
+	@Parameters({"browserName"})
 	@BeforeMethod
-	public void openBrowser() {
+	public void openBrowser(String browserName) {
 		String projectPath = System.getProperty("user.dir");
 		System.out.println(projectPath);
 		
-		String browserName = "CHROME";
+		//String browserName = "Firefox";
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			//CHROME
