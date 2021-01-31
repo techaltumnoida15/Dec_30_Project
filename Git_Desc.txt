@@ -1,0 +1,200 @@
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+
+NOTE: Pls use main istead of master
+
+git config --list
+
+to open global config in editor(notepad++)
+git config --global -e
+
+to change property in config, use
+git config --global "propertyName"
+
+for help use
+git help    OR git help "COMMAND_NAME "
+git help -a     : subcommands
+git help -g     : git guide
+
+to get current working dir in git bash
+pwd
+
+to initialize use
+git init
+
+to see hidden file in git bash
+ls la
+
+to get commit log
+git log
+
+to get commit log of a particular user
+git log --author="user.name"
+
+-----------------------
+
+to commit use
+git commit -m "message"
+
+or got commit -am "message"
+-----------------------
+
+WORKING DIR >> STAGING    >> LOCAL REPO
+            >> git add .  >> git commit - M "message"
+
+Verify changes in git : working dir v/s staging area
+git diff
+
+-----------------------
+
+compare stage with local repo
+git diff --staged
+
+-----------------------
+
+delete file in git
+git rm FILENAME
+
+-----------------------
+
+sync local repo to central repo
+git remote add origin "CENTRAL REPO PATH"
+
+-----------------------
+m
+get changes from master/OTHER_REPO to local repo
+git pull origin master/OTHER_REPO
+
+-----------------------
+
+push changes from local repo to central repo
+git push origin  master/OTHER_REPO
+
+NOTE** - before push, always pull latest code from central repo
+
+-----------------------
+
+creating branches in git
+git branch BRANCH_NAME
+
+switch to the branch
+git checkout BRANCH_NAME
+
+to get details/name of branches
+git branch   [it will list only local branches]
+
+or 
+
+git branch -a [it will list all branches including remote branches]
+
+------------------------
+
+rename branch
+git branch -m OLD_NAME NEW_NAME
+
+------------------------
+
+delete a branch
+git branch -d BRANCH_NAME
+------------------------
+
+merge branches in git
+1. switch to the branch in which you want to merge
+lets say from DEVELOP to MASTER
+git checkout master
+
+2. use below command to merge code from DEVELOP to MASTER
+git merge develop
+
+or 
+
+git merge BRANCH_NAME -m "message"
+
+3. push changes
+git push origin master
+
+-------------------------
+
+revert in git (STAGING to WORKING DIR)
+git reset HEAD FILE_NAME
+it will revert file from staging to working dir
+
+revert in git (LOCAL REPO to WORKING AREA)
+git reset HEAD~
+
+
+revert changes in file
+git --checkout FILE_NAME
+this command will revert changes in file
+-------------------------
+
+fork a repo/project
+fork is a concept to get a repo/project from another repo to our own repo
+
+-------------------------
+
+clone a repo
+git clone REPO_ADDRESS
+
+-------------------------
+
+difference between git pull and git fetch
+In the simplest terms, git pull does a git fetch followed by a git merge
+
+git fetch origin
+In the simplest terms, git pull does a git fetch followed by a git merge
+
+git pull origin master
+git pull, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. This means that pull not only downloads new data; it also directly integrates it into your current working copy files.
+
+
+git pull = git fetch + git merge
+-------------------------
+
+to get complete log about a branch
+git log --oneline --decorate
+
+git log --oneline --graph --decorate  [it will show graph along with log]
+
+git log --oneline --graph --decorate --all
+
+
+----------------------------
+Comparision in GIT:
+
+1. Compare Working Directory & Stage Area
+
+git status   => will tell which file is change or differ from workign area to staging area
+
+git diff  <fileName>   => will tell the content difference of the file.
+
+
+2. Compare working dir to repo
+
+git diff HEAD
+
+
+3. Compare Stage area & Git Repo
+
+git diff --staged HEAD <fileName>
+
+---------------------------------
+
+Compare GIT commit
+
+git diff <commitID_1>  <commitID_2>
+
+
+-----------------------------------
+
+Git merge vs rebase
+
+
+
+
+########################
+https://github.com/anshulc55/Data_Structure/tree/master/Alogorithms/src
+
+https://github.com/anshulc55/Data_Structure/tree/master/Java%20Collection/src
+
+https://github.com/anshulc55/Data_Structure
