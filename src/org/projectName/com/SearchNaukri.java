@@ -8,26 +8,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SearchNaukri {
+import basePack.BaseClass;
+import javaP.ReTryTests;
 
-	WebDriver driver;
-	
-	@BeforeMethod
-	public void openBrowser() {
-		System.setProperty("webdriver.chrome.driver", "F:\\Sel_Projects_v8\\Dec_30_Project\\browserDrivers\\chromedriver.exe");
-		
-		// 1. Open browser
-		driver = new ChromeDriver();
-		
-		//2. Maximize it
-		driver.manage().window().maximize();
-		
-		//3. Enter URL - naukri.com
-		driver.get("http://www.naukri.com");		
-	}
+public class SearchNaukri extends BaseClass{
+
 	
 	@Test
 	public void testSearchNaukri() {
+		driver.get("http://www.naukri.com");
+		
 		//TC Logic
 		//Click on search job text box
 		driver.findElement(By.id("qsbClick")).click();
@@ -40,8 +30,4 @@ public class SearchNaukri {
 		
 	}
 	
-	@AfterMethod
-	public void quitBrowser() {
-		//driver.quit();
-	}
 }
