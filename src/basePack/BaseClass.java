@@ -1,11 +1,19 @@
 package basePack;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -58,7 +66,32 @@ public class BaseClass {
 	
 	
 	@AfterMethod
-	public void quitBrowser() {
+	public void quitBrowser(ITestResult result) throws Exception{
+		//Check status of executed test
+		long testExecutionTime = result.getEndMillis();
+		//System.out.println("testExecutionTime = " + testExecutionTime);   //ms
+		
+		//System.out.println("getHost = " + result.getHost());
+		
+		System.out.println("result.isSuccess() = " + result.isSuccess());
+		
+		System.out.println("result.getStatus() = " + result.getStatus());
+		
+		System.out.println("result.getMethod().getMethodName() = " + result.getMethod().getMethodName());
+		
+		//============================================
+		if(!result.isSuccess()) {
+			//Capture Screenshot
+			File scrScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			
+			//String fileName = "abc.jpeg";
+			String fileName = result.getMethod().getMethodName() + "_" + new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss").format(new Date());
+			String filePath = System.getProperty("user.dir") + "\\screenshots\\" + fileName + ".jpeg";
+			File destScreenshot = new File(filePath);
+			
+			FileUtils.moveFile(scrScreenshot, destScreenshot);
+		}
+		
 		driver.quit();
 	}
 }
