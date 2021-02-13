@@ -73,11 +73,11 @@ public class BaseClass {
 		
 		//System.out.println("getHost = " + result.getHost());
 		
-		System.out.println("result.isSuccess() = " + result.isSuccess());
+		//System.out.println("result.isSuccess() = " + result.isSuccess());
 		
-		System.out.println("result.getStatus() = " + result.getStatus());
+		//System.out.println("result.getStatus() = " + result.getStatus());
 		
-		System.out.println("result.getMethod().getMethodName() = " + result.getMethod().getMethodName());
+		//System.out.println("result.getMethod().getMethodName() = " + result.getMethod().getMethodName());
 		
 		//============================================
 		if(!result.isSuccess()) {

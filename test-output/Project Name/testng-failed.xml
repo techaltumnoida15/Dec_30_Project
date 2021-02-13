@@ -4,28 +4,16 @@
   <listeners>
     <listener class-name="javaP.RetryListner"/>
   </listeners>
-  <test thread-count="5" name="Facebook Test(failed)">
-    <parameter name="browserName" value="Chrome"/>
+  <test thread-count="5" name="Amazon Test(failed)">
+    <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="org.testCases.com.TC02">
+      <class name="feb13.TC03">
         <methods>
-          <include name="testCase02"/>
+          <include name="testCase04"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
         </methods>
-      </class> <!-- org.testCases.com.TC02 -->
+      </class> <!-- feb13.TC03 -->
     </classes>
-  </test> <!-- Facebook Test(failed) -->
-  <test thread-count="5" name="Naukri Test(failed)">
-    <parameter name="browserName" value="ie"/>
-    <classes>
-      <class name="org.projectName.com.SearchNaukri">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="quitBrowser"/>
-          <include name="testSearchNaukri"/>
-        </methods>
-      </class> <!-- org.projectName.com.SearchNaukri -->
-    </classes>
-  </test> <!-- Naukri Test(failed) -->
+  </test> <!-- Amazon Test(failed) -->
 </suite> <!-- Failed suite [Project Name] -->
