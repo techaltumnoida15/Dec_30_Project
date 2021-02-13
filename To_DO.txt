@@ -1,0 +1,19 @@
+Alert
+WebTables
+Wait (imp, Exp)
+
+throw and throws
+
+Execute java Script(JavaScriptExecutor), Scroll browser
+window
+=================================
+
+SAT:
+Handle Flash Objects, Upload/Download Files using
+SIKULI
+ Upload/Download Files using AUTOIT 
+
+Start Framework
+Maven
+Read Data - Prop file, XL
+Extent Report

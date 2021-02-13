@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -42,8 +42,12 @@
               <span class="suite-name border-passed">Default suite</span>
 =======
             <a href="#" class="navigator-link" panel-name="suite-Project_Name">
+<<<<<<< HEAD
               <span class="suite-name border-failed">Project Name</span>
 >>>>>>> 3cb30801422673c5d21a8018b63a32a3b925171c
+=======
+              <span class="suite-name border-passed">Project Name</span>
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -72,7 +76,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Project_Name">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -126,6 +130,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+<<<<<<< HEAD
                     <span class="method-stats">7 methods, 2 failed,  4 skipped,  1 passed</span>
                   </li>
                   <li>
@@ -184,6 +189,9 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Project_Name -->
+=======
+                    <span class="method-stats">1 method,   1 passed</span>
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -194,8 +202,12 @@
                     <div class="method-list-content passed suite-Project_Name">
                       <span>
                         <img width="3%" src="passed.png"/>
+<<<<<<< HEAD
                         <a href="#" class="method navigator-link" panel-name="suite-Project_Name" title="org.testCases.com.TC01" hash-for-method="testCase01">testCase01</a> <!-- method navigator-link -->
 >>>>>>> 3cb30801422673c5d21a8018b63a32a3b925171c
+=======
+                        <a href="#" class="method navigator-link" panel-name="suite-Project_Name" title="feb13.TC03" hash-for-method="testCase04">testCase04</a> <!-- method navigator-link -->
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Project_Name -->
@@ -210,226 +222,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Project_Name" class="panel Project_Name">
-          <div class="suite-Project_Name-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.projectName.com.SearchNaukri</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchNaukri">
-                  </a> <!-- testSearchNaukri -->
-                  <span class="method-name">testSearchNaukri</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #qsbClick
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;DESKTOP-MP9K177&apos;, ip: &apos;192.168.43.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:39047/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 9a475500-ecc5-4ae1-b38b-1e355aa10d32
-*** Element info: {Using=id, value=qsbClick}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.projectName.com.SearchNaukri.testSearchNaukri(SearchNaukri.java:23)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Project_Name-class-failed -->
-          <div class="suite-Project_Name-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.testCases.com.TC02</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCase02">
-                  </a> <!-- testCase02 -->
-                  <span class="method-name">testCase02</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;_8esa&apos;]&quot;}
-  (Session info: chrome=88.0.4324.146)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;DESKTOP-MP9K177&apos;, ip: &apos;192.168.43.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\atyag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62258}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4e2c1f1d0e0da21f143f6562516ea843
-*** Element info: {Using=xpath, value=//input[@class=&apos;_8esa&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.testCases.com.TC02.testCase02(TC02.java:18)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Project_Name-class-failed -->
-          <div class="suite-Project_Name-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">org.projectName.com.SearchNaukri</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchNaukri">
-                  </a> <!-- testSearchNaukri -->
-                  <span class="method-name">testSearchNaukri</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #qsbClick
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;DESKTOP-MP9K177&apos;, ip: &apos;192.168.43.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:13783/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 6da86213-38dc-4909-90e0-4904766ff25d
-*** Element info: {Using=id, value=qsbClick}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.projectName.com.SearchNaukri.testSearchNaukri(SearchNaukri.java:23)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSearchNaukri">
-                  </a> <!-- testSearchNaukri -->
-                  <span class="method-name">testSearchNaukri</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #qsbClick
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;DESKTOP-MP9K177&apos;, ip: &apos;192.168.43.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:6967/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: bf24401a-7e2d-484a-89cf-3092bc74cbea
-*** Element info: {Using=id, value=qsbClick}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.projectName.com.SearchNaukri.testSearchNaukri(SearchNaukri.java:23)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Project_Name-class-skipped -->
-          <div class="suite-Project_Name-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">org.testCases.com.TC02</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCase02">
-                  </a> <!-- testCase02 -->
-                  <span class="method-name">testCase02</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;_8esa&apos;]&quot;}
-  (Session info: chrome=88.0.4324.146)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;DESKTOP-MP9K177&apos;, ip: &apos;192.168.43.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\atyag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62228}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 22ae216e954d2ac93a667d0156a78a50
-*** Element info: {Using=xpath, value=//input[@class=&apos;_8esa&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.testCases.com.TC02.testCase02(TC02.java:18)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCase02">
-                  </a> <!-- testCase02 -->
-                  <span class="method-name">testCase02</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@class=&apos;_8esa&apos;]&quot;}
-  (Session info: chrome=88.0.4324.146)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;DESKTOP-MP9K177&apos;, ip: &apos;192.168.43.193&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.146, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\atyag\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62202}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f633496c4c018fb28983ba93b3c71ec9
-*** Element info: {Using=xpath, value=//input[@class=&apos;_8esa&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.testCases.com.TC02.testCase02(TC02.java:18)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Project_Name-class-skipped -->
           <div class="suite-Project_Name-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.testCases.com.TC01</span>
+              <span class="class-name">feb13.TC03</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase01">
-                  </a> <!-- testCase01 -->
-                  <span class="method-name">testCase01</span>
+                  <a name="testCase04">
+                  </a> <!-- testCase04 -->
+                  <span class="method-name">testCase04</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -456,6 +259,7 @@ Session ID: f633496c4c018fb28983ba93b3c71ec9
   &lt;listeners&gt;
     &lt;listener class-name=&quot;javaP.RetryListner&quot;/&gt;
   &lt;/listeners&gt;
+<<<<<<< HEAD
   &lt;test thread-count=&quot;5&quot; name=&quot;Snapdeal Test&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
@@ -465,16 +269,14 @@ Session ID: f633496c4c018fb28983ba93b3c71ec9
   &lt;test thread-count=&quot;5&quot; name=&quot;Facebook Test&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
 >>>>>>> 3cb30801422673c5d21a8018b63a32a3b925171c
+=======
+  &lt;test thread-count=&quot;5&quot; name=&quot;Amazon Test&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
     &lt;classes&gt;
-      &lt;class name=&quot;org.testCases.com.TC02&quot;/&gt;
+      &lt;class name=&quot;feb13.TC03&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Facebook Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Naukri Test&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;ie&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.projectName.com.SearchNaukri&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Naukri Test --&gt;
+  &lt;/test&gt; &lt;!-- Amazon Test --&gt;
 &lt;/suite&gt; &lt;!-- Project Name --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -486,13 +288,7 @@ Session ID: f633496c4c018fb28983ba93b3c71ec9
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Snapdeal Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Facebook Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Naukri Test (1 class)</span>
+                <span class="test-name">Amazon Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -518,8 +314,9 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(1);
 data.setCell(0, 0, 0)
+<<<<<<< HEAD
 data.setCell(0, 1, 'testCase02')
 <<<<<<< HEAD
 data.setCell(0, 2, 'myPack01.TestNG_Annotations')
@@ -562,11 +359,16 @@ data.setCell(6, 0, 6)
 data.setCell(6, 1, 'testSearchNaukri')
 data.setCell(6, 2, 'org.projectName.com.SearchNaukri')
 data.setCell(6, 3, 1321);
+=======
+data.setCell(0, 1, 'testCase04')
+data.setCell(0, 2, 'feb13.TC03')
+data.setCell(0, 3, 14426);
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
 window.suiteTableData['Project_Name']= { tableData: data, tableDiv: 'times-div-Project_Name'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Project_Name">
               </div> <!-- times-div-Project_Name -->
 >>>>>>> 3cb30801422673c5d21a8018b63a32a3b925171c
@@ -578,12 +380,6 @@ return data;
             <span class="header-content">Reporter output for Project Name</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testCase01</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">SugnIn assertion pass.</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Project_Name" class="panel">
@@ -599,12 +395,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.testCases.com.TC01</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">feb13.TC03</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openBrowser(Firefox)</span>
+                <span class="method-name">openBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+<<<<<<< HEAD
                 <span class="method-name">testCase01</span>
                 <span class="method-start">8549 ms</span>
               </div> <!-- test-method -->
@@ -702,10 +499,14 @@ return data;
                 </img>
                 <span class="method-name">testSearchNaukri</span>
                 <span class="method-start">61506 ms</span>
+=======
+                <span class="method-name">testCase04</span>
+                <span class="method-start">2300 ms</span>
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">quitBrowser([TestResult name=testSearchNaukri status=FAILURE method=SearchNaukri.testSearchNaukri()[pri:0, insta...)</span>
-                <span class="method-start">62998 ms</span>
+                <span class="method-name">quitBrowser([TestResult name=testCase04 status=SUCCESS method=TC03.testCase04()[pri:0, instance:feb13.TC03@47db5...)</span>
+                <span class="method-start">16732 ms</span>
               </div> <!-- configuration-method after -->
 >>>>>>> 3cb30801422673c5d21a8018b63a32a3b925171c
           </div> <!-- main-panel-content rounded-window-bottom -->

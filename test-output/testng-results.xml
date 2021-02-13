@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
 =======
 <testng-results skipped="0" failed="2" ignored="0" retried="4" total="7" passed="1">
 >>>>>>> 3cb30801422673c5d21a8018b63a32a3b925171c
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
   <reporter-output>
-    <line>
-      <![CDATA[SugnIn assertion pass.]]>
-    </line>
   </reporter-output>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <suite started-at="2021-01-31T16:23:48Z" name="Default suite" finished-at="2021-01-31T16:23:48Z" duration-ms="40">
     <groups>
@@ -30,39 +32,40 @@
         <test-method is-config="true" signature="afterTest()[pri:0, instance:myPack01.TestNG_Annotations@5403f35f]" started-at="2021-01-31T16:23:48Z" name="afterTest" finished-at="2021-01-31T16:23:48Z" duration-ms="0" status="PASS">
 =======
   <suite name="Project Name" duration-ms="63787" started-at="2021-02-07T14:59:04 IST" finished-at="2021-02-07T15:00:08 IST">
+=======
+  <suite name="Project Name" duration-ms="17627" started-at="2021-02-13T15:24:08 IST" finished-at="2021-02-13T15:24:26 IST">
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
     <groups>
     </groups>
-    <test name="Snapdeal Test" duration-ms="15175" started-at="2021-02-07T14:59:04 IST" finished-at="2021-02-07T14:59:19 IST">
-      <class name="org.testCases.com.TC01">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:org.testCases.com.TC01@47db50c5]" name="openBrowser" is-config="true" duration-ms="8548" started-at="2021-02-07T14:59:04 IST" finished-at="2021-02-07T14:59:12 IST">
+    <test name="Amazon Test" duration-ms="17627" started-at="2021-02-13T15:24:08 IST" finished-at="2021-02-13T15:24:26 IST">
+      <class name="feb13.TC03">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:feb13.TC03@47db50c5]" name="openBrowser" is-config="true" duration-ms="2298" started-at="2021-02-13T15:24:09 IST" finished-at="2021-02-13T15:24:11 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testCase01()[pri:0, instance:org.testCases.com.TC01@47db50c5]" name="testCase01" duration-ms="4750" started-at="2021-02-07T14:59:12 IST" finished-at="2021-02-07T14:59:17 IST">
+        <test-method status="PASS" signature="testCase04()[pri:0, instance:feb13.TC03@47db50c5]" name="testCase04" duration-ms="14426" started-at="2021-02-13T15:24:11 IST" finished-at="2021-02-13T15:24:25 IST">
           <reporter-output>
-            <line>
-              <![CDATA[SugnIn assertion pass.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method status="PASS" signature="quitBrowser(org.testng.ITestResult)[pri:0, instance:org.testCases.com.TC01@47db50c5]" name="quitBrowser" is-config="true" duration-ms="1836" started-at="2021-02-07T14:59:17 IST" finished-at="2021-02-07T14:59:19 IST">
+        </test-method> <!-- testCase04 -->
+        <test-method status="PASS" signature="quitBrowser(org.testng.ITestResult)[pri:0, instance:feb13.TC03@47db50c5]" name="quitBrowser" is-config="true" duration-ms="843" started-at="2021-02-13T15:24:25 IST" finished-at="2021-02-13T15:24:26 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCase01 status=SUCCESS method=TC01.testCase01()[pri:0, instance:org.testCases.com.TC01@47db50c5] output=SugnIn assertion pass.]]]>
+                <![CDATA[[TestResult name=testCase04 status=SUCCESS method=TC03.testCase04()[pri:0, instance:feb13.TC03@47db50c5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
+<<<<<<< HEAD
       </class> <!-- org.testCases.com.TC01 -->
     </test> <!-- Snapdeal Test -->
     <test name="Facebook Test" duration-ms="36865" started-at="2021-02-07T14:59:19 IST" finished-at="2021-02-07T14:59:56 IST">
@@ -632,5 +635,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- quitBrowser -->
       </class> <!-- org.projectName.com.SearchNaukri -->
     </test> <!-- Naukri Test -->
+=======
+      </class> <!-- feb13.TC03 -->
+    </test> <!-- Amazon Test -->
+>>>>>>> e91ab1d1a051c01c857ff8d739e3b5efe30bb249
   </suite> <!-- Project Name -->
 </testng-results>

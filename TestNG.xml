@@ -8,14 +8,14 @@
      <listener class-name="javaP.RetryListner" />
 </listeners>
 	
-	<test name="Snapdeal Test">
-		<parameter name="browserName" value="Firefox" />
+	<test name="Amazon Test">
+		<parameter name="browserName" value="chrome" />
 		<classes>
-			<class name="org.testCases.com.TC01" />
+			<class name="feb13.TC03" />
 		</classes>
 	</test>
 
-	<test name="Facebook Test">
+	<!-- <test name="Facebook Test">
 		<parameter name="browserName" value="Chrome" />
 		<classes>
 			<class name="org.testCases.com.TC02" />
@@ -27,7 +27,7 @@
 		<classes>
 			<class name="org.projectName.com.SearchNaukri" />
 		</classes>
-	</test>
+	</test> -->
 
 
 </suite>
