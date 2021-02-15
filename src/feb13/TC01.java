@@ -20,11 +20,13 @@ public class TC01 extends BaseClass{
 		
 		//Handle page cookies
 		driver.manage().deleteAllCookies();
+		d
 		
 		
 		driver.navigate().refresh();
 		driver.navigate().forward();
 		*/
+		//driver.manage().addCookie("");
 		
 		driver.get("https://www.amazon.in/");
 		
