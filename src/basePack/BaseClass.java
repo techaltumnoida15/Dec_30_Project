@@ -3,6 +3,7 @@ package basePack;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -62,6 +63,10 @@ public class BaseClass {
 		//2. Maximize it
 		driver.manage().window().maximize();
 		
+		//implici wait
+		//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().setScriptTimeout(2, TimeUnit.MINUTES);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	

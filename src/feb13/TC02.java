@@ -1,9 +1,13 @@
 package feb13;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -33,6 +37,11 @@ public class TC02 extends BaseClass{
 		String destination = "NYC";
 		from.sendKeys(destination);
 		Thread.sleep(3000);
+		
+		//Exp wait
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.pollingEvery(Duration.ofSeconds(1));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class*='suggestion-box__content air']")));
 		
 		//Check if suggestion box is present
 		WebElement suggestionBox = driver.findElement(By.cssSelector("div[class*='suggestion-box__content air']"));

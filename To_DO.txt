@@ -4,8 +4,7 @@ Wait (imp, Exp)
 
 throw and throws
 
-Execute java Script(JavaScriptExecutor), Scroll browser
-window
+Execute java Script(JavaScriptExecutor), Scroll browser window
 =================================
 
 SAT:
@@ -17,3 +16,17 @@ Start Framework
 Maven
 Read Data - Prop file, XL
 Extent Report
+
+=======================================
+
+Selenium Documentation
+
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/package-summary.html
+
+https://www.javadoc.io/static/org.seleniumhq.selenium/selenium-api/2.50.1/index.html?overview-summary.html
+
+=======================================
+
+Maven central Rpo
+
+https://search.maven.org/
