@@ -9,32 +9,38 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import basePack.BaseClass;
 
 public class TC02 extends BaseClass{
 
-	@Test
-	public void testCase02() throws Exception{
-		driver.get("https://www.cheapoair.com/");
+	@Test(dataProvider = "testData")
+	public void testCase02(String destination, String suggestionText, String departDate) throws Exception{
+		driver.get(getDataPropFile("url"));
 		
 		//Enter Destination
-		WebElement from = driver.findElement(By.cssSelector("input[id='from0']"));
+		WebElement from = driver.findElement(By.cssSelector(getDataPropFile("cssFrom")));
 		String writtenVal = from.getAttribute("value");
 		
 		System.out.println("writtenVal = " + writtenVal);
 		
 		//from.clear();
 		if(!(writtenVal == null) && !(writtenVal == "")) {
-			driver.findElement(By.cssSelector("a[class='suggestion-box__clear icon']")).click();
+			driver.findElement(By.cssSelector(getDataPropFile("cssCrossButtonInFrom"))).click();
 			
 			writtenVal = from.getAttribute("value");
 			System.out.println("writtenVal = " + writtenVal);
 			
 		}
+<<<<<<< HEAD
 		 
 		String destination = "NYC";
+=======
+		
+		//String destination = "NYC";
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 		from.sendKeys(destination);
 		Thread.sleep(3000);
 		
@@ -44,7 +50,7 @@ public class TC02 extends BaseClass{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class*='suggestion-box__content air']")));
 		
 		//Check if suggestion box is present
-		WebElement suggestionBox = driver.findElement(By.cssSelector("div[class*='suggestion-box__content air']"));
+		WebElement suggestionBox = driver.findElement(By.cssSelector(getDataPropFile("cssSuggestionBox")));
 		String classVal = suggestionBox.getAttribute("class");
 		System.out.println("class Val is = " + classVal);
 		
@@ -67,15 +73,19 @@ public class TC02 extends BaseClass{
 			String suggestionName = suggestionListCount.get(i).getText();
 			System.out.println(suggestionName);
 			
-			if(suggestionName.contains("New York") && suggestionName.contains(destination)) {
+			if(suggestionName.contains(suggestionText) && suggestionName.contains(destination)) {
 				suggestionListCount.get(i).click();
 				break;
 			}
 		}
 		
 		//Assignment - To
+<<<<<<< HEAD
 		
 	/*	//Click on Depart Date = Current Date + 20 Days
+=======
+		//Click on Depart Date = Current Date + 20 Days
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 		
 		WebElement departCal = driver.findElement(By.cssSelector("input[id='cal0']"));
 		departCal.click();
@@ -90,7 +100,7 @@ public class TC02 extends BaseClass{
 				String dateInCal = driver.findElement(By.cssSelector(dateSelector)).getText();
 				System.out.println(dateInCal);
 				
-				if(dateInCal.contains("18")) {
+				if(dateInCal.contains(departDate)) {
 					driver.findElement(By.cssSelector(dateSelector)).click();
 					System.out.println("Date selected.");
 					break;
@@ -101,5 +111,15 @@ public class TC02 extends BaseClass{
 			}
 		}
 		*/
+	}
+
+	@DataProvider(name="testData")
+	public Object[][] getTestData() {
+		
+		return new Object[][] {
+			{"NYC", "New York", "28"},
+			//{"LAS", "Las Vegas", "27"},
+		};
+		
 	}
 }

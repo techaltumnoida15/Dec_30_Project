@@ -1,8 +1,11 @@
 package basePack;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -16,6 +19,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
@@ -98,5 +102,24 @@ public class BaseClass {
 		}
 		
 		//driver.quit();
+	}
+	
+	static Properties prop;
+	@BeforeClass
+	public void beforeClass() throws Exception {
+		String filePath = System.getProperty("user.dir") + "//testData//data.properties";
+		System.out.println("File path is = " + filePath);
+		
+		File file = new File(filePath);
+		
+		FileInputStream fIP = new FileInputStream(file);
+		
+		prop = new Properties();
+		prop.load(fIP);
+	}
+	
+	public static String getDataPropFile(String key){
+		
+		return prop.getProperty(key);
 	}
 }

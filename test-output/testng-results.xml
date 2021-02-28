@@ -2,12 +2,25 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-02-15T17:11:51Z" name="Project Name" finished-at="2021-02-15T17:12:00Z" duration-ms="9453">
     <groups>
     </groups>
     <test started-at="2021-02-15T17:11:51Z" name="Amazon Test" finished-at="2021-02-15T17:12:00Z" duration-ms="9453">
       <class name="feb13.TC02_TODATE">
         <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:feb13.TC02_TODATE@3eb91815]" started-at="2021-02-15T17:11:51Z" name="openBrowser" finished-at="2021-02-15T17:11:52Z" duration-ms="1684" status="PASS">
+=======
+  <suite name="Project Name" duration-ms="24084" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:26:13 IST">
+    <groups>
+    </groups>
+    <test name="Amazon Test" duration-ms="24084" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:26:13 IST">
+      <class name="feb13.TC02">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:feb13.TC02@954b04f]" name="beforeClass" is-config="true" duration-ms="7" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:25:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:feb13.TC02@954b04f]" name="openBrowser" is-config="true" duration-ms="2547" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:25:52 IST">
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
           <params>
             <param index="0">
               <value>
@@ -18,6 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
+<<<<<<< HEAD
         <test-method signature="testCase02()[pri:1, instance:feb13.TC02_TODATE@3eb91815]" started-at="2021-02-15T17:11:52Z" name="testCase02" finished-at="2021-02-15T17:12:00Z" duration-ms="7747" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -27,13 +41,45 @@
             <param index="0">
               <value>
                 <![CDATA[[TestResult name=testCase02 status=SUCCESS method=TC02_TODATE.testCase02()[pri:1, instance:feb13.TC02_TODATE@3eb91815] output={null}]]]>
+=======
+        <test-method status="PASS" signature="testCase02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:feb13.TC02@954b04f]" name="testCase02" duration-ms="20814" started-at="2021-02-27T14:25:52 IST" data-provider="testData" finished-at="2021-02-27T14:26:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NYC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase02 -->
+        <test-method status="PASS" signature="quitBrowser(org.testng.ITestResult)[pri:0, instance:feb13.TC02@954b04f]" name="quitBrowser" is-config="true" duration-ms="683" started-at="2021-02-27T14:26:12 IST" finished-at="2021-02-27T14:26:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase02 status=SUCCESS method=TC02.testCase02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:feb13.TC02@954b04f] output={null}]]]>
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
+<<<<<<< HEAD
       </class> <!-- feb13.TC02_TODATE -->
+=======
+      </class> <!-- feb13.TC02 -->
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
     </test> <!-- Amazon Test -->
   </suite> <!-- Project Name -->
 </testng-results>
