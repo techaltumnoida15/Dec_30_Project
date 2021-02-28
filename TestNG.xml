@@ -8,10 +8,10 @@
      <listener class-name="javaP.RetryListner" />
 </listeners>
 	
-	<test name="Amazon Test">
-		<parameter name="browserName" value="chrome" />
+	<test name="Upload File Using AutoIT">
+		<parameter name="browserName" value="firefox" />
 		<classes>
-			<class name="feb13.TC02" />
+			<class name="feb13.UploadFile_AutoIT" />
 		</classes>
 	</test>
 

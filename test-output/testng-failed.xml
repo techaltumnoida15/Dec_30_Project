@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="feb13.TC03">
+      <class name="feb13.UploadFile_AutoIT">
         <methods>
-          <include name="testCase04"/>
+          <include name="uploadFiles"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- feb13.TC03 -->
+      </class> <!-- feb13.UploadFile_AutoIT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

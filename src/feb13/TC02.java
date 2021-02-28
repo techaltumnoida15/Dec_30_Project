@@ -2,11 +2,15 @@ package feb13;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -35,14 +39,25 @@ public class TC02 extends BaseClass{
 			
 		}
 		
-		//String destination = "NYC";
+		//Type Airport Code / Destination
 		from.sendKeys(destination);
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 		
+		/*
 		//Exp wait
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.pollingEvery(Duration.ofSeconds(1));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class*='suggestion-box__content air']")));
+		*/
+		
+		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
+				.withMessage("I am waiting for suggestionBox.")
+				.withTimeout(Duration.ofSeconds(15))
+				.pollingEvery(Duration.ofSeconds(1))
+				.ignoring(NoSuchElementException.class);
+		
+		fluentWait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(getDataPropFile("cssSuggestionBox"))));
+				
 		
 		//Check if suggestion box is present
 		WebElement suggestionBox = driver.findElement(By.cssSelector(getDataPropFile("cssSuggestionBox")));
@@ -57,6 +72,9 @@ public class TC02 extends BaseClass{
 		 * driver.findElement(By.cssSelector("ul[class='suggestion-box__list']"));
 		 * List<WebElement> myL = el.findElements(By.tagName("li"));
 		 */
+		
+		
+		
 		
 		List<WebElement> suggestionListCount = driver.findElement(By.cssSelector("ul[class='suggestion-box__list']")).findElements(By.tagName("li"));
 		System.out.println("Total Li tags = " + suggestionListCount.size());

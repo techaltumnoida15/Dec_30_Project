@@ -2,59 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Project Name" duration-ms="24084" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:26:13 IST">
+  <suite name="Project Name" duration-ms="37421" started-at="2021-02-28T15:14:56 IST" finished-at="2021-02-28T15:15:34 IST">
     <groups>
     </groups>
-    <test name="Amazon Test" duration-ms="24084" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:26:13 IST">
-      <class name="feb13.TC02">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:feb13.TC02@954b04f]" name="beforeClass" is-config="true" duration-ms="7" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:25:49 IST">
+    <test name="Upload File Using AutoIT" duration-ms="37421" started-at="2021-02-28T15:14:56 IST" finished-at="2021-02-28T15:15:34 IST">
+      <class name="feb13.UploadFile_AutoIT">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:feb13.UploadFile_AutoIT@954b04f]" name="beforeClass" is-config="true" duration-ms="8" started-at="2021-02-28T15:14:56 IST" finished-at="2021-02-28T15:14:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:feb13.TC02@954b04f]" name="openBrowser" is-config="true" duration-ms="2547" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:25:52 IST">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:feb13.UploadFile_AutoIT@954b04f]" name="openBrowser" is-config="true" duration-ms="26975" started-at="2021-02-28T15:14:56 IST" finished-at="2021-02-28T15:15:23 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testCase02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:feb13.TC02@954b04f]" name="testCase02" duration-ms="20814" started-at="2021-02-27T14:25:52 IST" data-provider="testData" finished-at="2021-02-27T14:26:12 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NYC]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[New York]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[28]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="uploadFiles()[pri:0, instance:feb13.UploadFile_AutoIT@954b04f]" name="uploadFiles" duration-ms="10408" started-at="2021-02-28T15:15:23 IST" finished-at="2021-02-28T15:15:34 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase02 -->
-        <test-method status="PASS" signature="quitBrowser(org.testng.ITestResult)[pri:0, instance:feb13.TC02@954b04f]" name="quitBrowser" is-config="true" duration-ms="683" started-at="2021-02-27T14:26:12 IST" finished-at="2021-02-27T14:26:13 IST">
+        </test-method> <!-- uploadFiles -->
+        <test-method status="PASS" signature="quitBrowser(org.testng.ITestResult)[pri:0, instance:feb13.UploadFile_AutoIT@954b04f]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-02-28T15:15:34 IST" finished-at="2021-02-28T15:15:34 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCase02 status=SUCCESS method=TC02.testCase02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:feb13.TC02@954b04f] output={null}]]]>
+                <![CDATA[[TestResult name=uploadFiles status=SUCCESS method=UploadFile_AutoIT.uploadFiles()[pri:0, instance:feb13.UploadFile_AutoIT@954b04f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- feb13.TC02 -->
-    </test> <!-- Amazon Test -->
+      </class> <!-- feb13.UploadFile_AutoIT -->
+    </test> <!-- Upload File Using AutoIT -->
   </suite> <!-- Project Name -->
 </testng-results>
