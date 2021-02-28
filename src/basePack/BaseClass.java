@@ -97,6 +97,6 @@ public class BaseClass {
 			FileUtils.moveFile(scrScreenshot, destScreenshot);
 		}
 		
-		driver.quit();
+		//driver.quit();
 	}
 }

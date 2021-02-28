@@ -11,7 +11,8 @@
 	<test name="Amazon Test">
 		<parameter name="browserName" value="chrome" />
 		<classes>
-			<class name="feb13.TC03" />
+		  
+			<class name="feb13.TC02_TODATE"/>
 		</classes>
 	</test>
 

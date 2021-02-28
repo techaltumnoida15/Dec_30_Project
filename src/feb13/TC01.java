@@ -39,7 +39,7 @@ public class TC01 extends BaseClass{
 		System.out.println("Mouse Over - Done");
 		Thread.sleep(5000);
 		
-		//Click on image afetr mouse over
+		//Click on image after mouse over
 		driver.findElement(By.cssSelector("img[id='multiasins-img-link']")).click();
 		Thread.sleep(5000);
 		
