@@ -2,6 +2,7 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="3326" started-at="2021-02-07T12:04:39 IST" finished-at="2021-02-07T12:04:42 IST">
     <groups>
     </groups>
@@ -270,4 +271,61 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- myPack01.TC01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+  <suite name="Project Name" duration-ms="24084" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:26:13 IST">
+    <groups>
+    </groups>
+    <test name="Amazon Test" duration-ms="24084" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:26:13 IST">
+      <class name="feb13.TC02">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:feb13.TC02@954b04f]" name="beforeClass" is-config="true" duration-ms="7" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:25:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:feb13.TC02@954b04f]" name="openBrowser" is-config="true" duration-ms="2547" started-at="2021-02-27T14:25:49 IST" finished-at="2021-02-27T14:25:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testCase02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:feb13.TC02@954b04f]" name="testCase02" duration-ms="20814" started-at="2021-02-27T14:25:52 IST" data-provider="testData" finished-at="2021-02-27T14:26:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NYC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase02 -->
+        <test-method status="PASS" signature="quitBrowser(org.testng.ITestResult)[pri:0, instance:feb13.TC02@954b04f]" name="quitBrowser" is-config="true" duration-ms="683" started-at="2021-02-27T14:26:12 IST" finished-at="2021-02-27T14:26:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase02 status=SUCCESS method=TC02.testCase02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:feb13.TC02@954b04f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- feb13.TC02 -->
+    </test> <!-- Amazon Test -->
+  </suite> <!-- Project Name -->
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 </testng-results>

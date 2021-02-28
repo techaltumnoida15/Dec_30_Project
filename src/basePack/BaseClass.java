@@ -1,8 +1,17 @@
 package basePack;
 
 import java.io.File;
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Date;
+=======
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -15,6 +24,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
@@ -62,6 +72,10 @@ public class BaseClass {
 		//2. Maximize it
 		driver.manage().window().maximize();
 		
+		//implici wait
+		//driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().setScriptTimeout(2, TimeUnit.MINUTES);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	
@@ -73,11 +87,19 @@ public class BaseClass {
 		
 		//System.out.println("getHost = " + result.getHost());
 		
+<<<<<<< HEAD
 		System.out.println("result.isSuccess() = " + result.isSuccess());
 		
 		System.out.println("result.getStatus() = " + result.getStatus());
 		
 		System.out.println("result.getMethod().getMethodName() = " + result.getMethod().getMethodName());
+=======
+		//System.out.println("result.isSuccess() = " + result.isSuccess());
+		
+		//System.out.println("result.getStatus() = " + result.getStatus());
+		
+		//System.out.println("result.getMethod().getMethodName() = " + result.getMethod().getMethodName());
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 		
 		//============================================
 		if(!result.isSuccess()) {
@@ -93,5 +115,24 @@ public class BaseClass {
 		}
 		
 		driver.quit();
+	}
+	
+	static Properties prop;
+	@BeforeClass
+	public void beforeClass() throws Exception {
+		String filePath = System.getProperty("user.dir") + "//testData//data.properties";
+		System.out.println("File path is = " + filePath);
+		
+		File file = new File(filePath);
+		
+		FileInputStream fIP = new FileInputStream(file);
+		
+		prop = new Properties();
+		prop.load(fIP);
+	}
+	
+	public static String getDataPropFile(String key){
+		
+		return prop.getProperty(key);
 	}
 }

@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="myPack01.TC01">
         <methods>
           <include name="testCase01"/>
@@ -10,6 +11,15 @@
           <include name="quitBrowser"/>
         </methods>
       </class> <!-- myPack01.TC01 -->
+=======
+      <class name="feb13.TC03">
+        <methods>
+          <include name="testCase04"/>
+          <include name="openBrowser"/>
+          <include name="quitBrowser"/>
+        </methods>
+      </class> <!-- feb13.TC03 -->
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
