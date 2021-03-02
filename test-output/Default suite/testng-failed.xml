@@ -4,6 +4,7 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="myPack01.TC01">
         <methods>
           <include name="testCase01"/>
@@ -13,13 +14,21 @@
       </class> <!-- myPack01.TC01 -->
 =======
       <class name="feb13.TC03">
+=======
+      <class name="feb13.UploadFile_AutoIT">
+>>>>>>> 8e4fdd66072c85f9c1036658adf4d27f7caef3d5
         <methods>
-          <include name="testCase04"/>
+          <include name="uploadFiles"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
+          <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- feb13.TC03 -->
 >>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
+=======
+      </class> <!-- feb13.UploadFile_AutoIT -->
+>>>>>>> 8e4fdd66072c85f9c1036658adf4d27f7caef3d5
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

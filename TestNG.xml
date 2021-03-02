@@ -8,42 +8,25 @@
      <listener class-name="javaP.RetryListner" />
 </listeners>
 	
-<<<<<<< HEAD
-	<test name="Snapdeal Test">
-		<parameter name="browserName" value="Firefox" />
-		<classes>
-			<class name="org.testCases.com.TC01" />
-		</classes>
-	</test>
-
-	<test name="Facebook Test">
-=======
-	<test name="Amazon Test">
+	<test name="Upload File Using AutoIT">
 		<parameter name="browserName" value="chrome" />
 		<classes>
-			<class name="feb13.TC02" />
+			<class name="feb13.UploadFile_AutoIT" />
 		</classes>
 	</test>
 
 	<!-- <test name="Facebook Test">
->>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 		<parameter name="browserName" value="Chrome" />
 		<classes>
 			<class name="org.testCases.com.TC02" />
 		</classes>
 	</test>
-
 	<test name="Naukri Test">
 		<parameter name="browserName" value="ie" />
 		<classes>
 			<class name="org.projectName.com.SearchNaukri" />
 		</classes>
-<<<<<<< HEAD
-	</test>
-=======
 	</test> -->
->>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 
 
 </suite>
-

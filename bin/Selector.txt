@@ -1,0 +1,122 @@
+Xpath
+Relative
+
+//HTML-TAG[@att='value']
+
+xpath=//HTML-TAG[text()='value']
+
+use : contains, starts-with
+
+xpath=//HTML-TAG[contains(@id = 'abc')]    //id = 'abc' contain
+
+//HTML-TAG[@id='abc']                // id = 'abc'
+
+
+If there are multiple elements of same xapth
+
+(//HTML-TAG[@att='value'])[2]       //Here 2 is the number of element were you want to navigate
+
+OR
+
+//descendant::HTML-TAG[@att='val']
+
+
+"/" is use to next child
+
+
+//input[@class='pqr']/a
+========================================================
+
+cssSelector
+
+1.
+css=HTML-TAG[att='value']
+
+
+2.
+If ID is given in HTML code
+
+<input class='abc' id='lmn' name='xyz'>  text  </input>
+
+css=HTML-TAG#ID
+css=input#lmn
+
+
+3. 
+If CLASS is given in HTML code
+
+<input class='abc' id='lmn' name='xyz'>  text  </input>
+
+css=HTML-TAG.CLASS
+css=input.abc
+
+
+4. startsWith (^)
+
+<input class='abc123' id='lmn' name='xyz'>  text  </input>
+
+css=HTML-TAG[att^='val']
+
+input[class^='abc']
+
+
+5. endsWith
+
+<input class='abc' id='123lmn' name='xyz'>  text  </input>
+
+css=HTML-TAG[att$='val']
+
+input[id$='lmn']
+
+
+6. matchingAnywhere (*)
+
+<input class='abc' id='lmn' name='123xyz8'>  text  </input>
+
+css=HTML-TAH[att*='val']
+
+input[name*=xyz]
+
+
+7. To navigate child element
+
+" "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

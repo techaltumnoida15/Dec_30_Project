@@ -1,5 +1,17 @@
+*.jar
+
+*.md
+
+<<<<<<< HEAD
+=======
+*.jpeg
+
+>>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
+/screenshots/
+/src/
+/test-output/
+/testData/
+/uploadFiles/
+/basePack/
 /feb13/
 /javaP/
-/basePack/
-/myPack01/
-/org/

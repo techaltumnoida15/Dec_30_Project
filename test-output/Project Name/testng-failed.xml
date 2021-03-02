@@ -4,43 +4,17 @@
   <listeners>
     <listener class-name="javaP.RetryListner"/>
   </listeners>
-<<<<<<< HEAD
-  <test thread-count="5" name="Facebook Test(failed)">
-    <parameter name="browserName" value="Chrome"/>
-    <classes>
-      <class name="org.testCases.com.TC02">
-        <methods>
-          <include name="testCase02"/>
-          <include name="openBrowser"/>
-          <include name="quitBrowser"/>
-        </methods>
-      </class> <!-- org.testCases.com.TC02 -->
-    </classes>
-  </test> <!-- Facebook Test(failed) -->
-  <test thread-count="5" name="Naukri Test(failed)">
-    <parameter name="browserName" value="ie"/>
-    <classes>
-      <class name="org.projectName.com.SearchNaukri">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="quitBrowser"/>
-          <include name="testSearchNaukri"/>
-        </methods>
-      </class> <!-- org.projectName.com.SearchNaukri -->
-    </classes>
-  </test> <!-- Naukri Test(failed) -->
-=======
-  <test thread-count="5" name="Amazon Test(failed)">
+  <test thread-count="5" name="Upload File Using AutoIT(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="feb13.TC03">
+      <class name="feb13.UploadFile_AutoIT">
         <methods>
-          <include name="testCase04"/>
+          <include name="uploadFiles"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- feb13.TC03 -->
+      </class> <!-- feb13.UploadFile_AutoIT -->
     </classes>
-  </test> <!-- Amazon Test(failed) -->
->>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
+  </test> <!-- Upload File Using AutoIT(failed) -->
 </suite> <!-- Failed suite [Project Name] -->
