@@ -4,6 +4,7 @@
   <parameter name="browserName" value="chrome"/>
   <test thread-count="2" parallel="classes" name="Smoke Tests(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="org.testCases.com.TC01">
         <methods>
           <include name="openBrowser"/>
@@ -28,6 +29,16 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- org.testCases.com.TC02 -->
+=======
+      <class name="feb13.UploadFile_AutoIT">
+        <methods>
+          <include name="uploadFiles"/>
+          <include name="openBrowser"/>
+          <include name="quitBrowser"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- feb13.UploadFile_AutoIT -->
+>>>>>>> 8e4fdd66072c85f9c1036658adf4d27f7caef3d5
     </classes>
   </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [Project Name] -->

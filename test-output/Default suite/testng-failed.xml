@@ -3,14 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="feb13.TC02">
         <methods>
           <include name="testCase02"/>
+=======
+      <class name="feb13.UploadFile_AutoIT">
+        <methods>
+          <include name="uploadFiles"/>
+>>>>>>> 8e4fdd66072c85f9c1036658adf4d27f7caef3d5
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- feb13.TC02 -->
+=======
+      </class> <!-- feb13.UploadFile_AutoIT -->
+>>>>>>> 8e4fdd66072c85f9c1036658adf4d27f7caef3d5
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
