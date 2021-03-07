@@ -34,13 +34,8 @@ public class TC02 extends BaseClass{
 			System.out.println("writtenVal = " + writtenVal);
 			
 		}
-<<<<<<< HEAD
-		 
-		String destination = "NYC";
-=======
 		
 		//String destination = "NYC";
->>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 		from.sendKeys(destination);
 		Thread.sleep(3000);
 		
@@ -80,12 +75,7 @@ public class TC02 extends BaseClass{
 		}
 		
 		//Assignment - To
-<<<<<<< HEAD
-		
-	/*	//Click on Depart Date = Current Date + 20 Days
-=======
 		//Click on Depart Date = Current Date + 20 Days
->>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
 		
 		WebElement departCal = driver.findElement(By.cssSelector("input[id='cal0']"));
 		departCal.click();
@@ -110,7 +100,6 @@ public class TC02 extends BaseClass{
 				System.out.println("No date found for selector = " + dateSelector);
 			}
 		}
-		*/
 	}
 
 	@DataProvider(name="testData")

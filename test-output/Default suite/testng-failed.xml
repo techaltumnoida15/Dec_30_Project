@@ -8,6 +8,7 @@
           <include name="testCase02"/>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- feb13.TC02 -->
     </classes>

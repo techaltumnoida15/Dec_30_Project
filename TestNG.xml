@@ -11,12 +11,8 @@
 	<test name="Amazon Test">
 		<parameter name="browserName" value="chrome" />
 		<classes>
-<<<<<<< HEAD
-		  
-			<class name="feb13.TC02_TODATE"/>
-=======
 			<class name="feb13.TC02" />
->>>>>>> 9bc4a2d34bdcc44cd0529e4d7cbb0a08382aa932
+
 		</classes>
 	</test>
 

@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Project Name]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="javaP.RetryListner"/>
-  </listeners>
-  <test thread-count="5" name="Amazon Test(failed)">
-    <parameter name="browserName" value="chrome"/>
+<suite thread-count="2" parallel="classes" name="Failed suite [Project Name]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chrome"/>
+  <test thread-count="2" parallel="classes" name="Smoke Tests(failed)">
     <classes>
-      <class name="feb13.TC02_TODATE">
+      <class name="org.testCases.com.TC01">
         <methods>
           <include name="openBrowser"/>
           <include name="quitBrowser"/>
-          <include name="TODATE"/>
+          <include name="beforeClass"/>
+          <include name="testCase01"/>
         </methods>
-      </class> <!-- feb13.TC02_TODATE -->
+      </class> <!-- org.testCases.com.TC01 -->
+      <class name="org.projectName.com.SearchNaukri">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="quitBrowser"/>
+          <include name="testSearchNaukri"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.projectName.com.SearchNaukri -->
+      <class name="org.testCases.com.TC02">
+        <methods>
+          <include name="testCase02"/>
+          <include name="openBrowser"/>
+          <include name="quitBrowser"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- org.testCases.com.TC02 -->
     </classes>
-  </test> <!-- Amazon Test(failed) -->
+  </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [Project Name] -->
