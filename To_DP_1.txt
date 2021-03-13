@@ -1,0 +1,30 @@
+collection framework in java
+reflection API
+singleton pattern
+throw and throws
+static, this, super
+Object cloaning
+threading / multithreading
+Abstract class / Interface
+finalize()
+Difference between java 8, 9 10
+synchronization
+getter, setter
+---------------------
+sorting
+recursion
+find missing number in array
+reverse a num
+
+=====================
+
+Azure devops
+
+https://www.youtube.com/watch?v=MOZMw5_fBFA
+
+https://www.youtube.com/watch?v=-yFXVwhGP0s&list=PLaFzfwmPR7_Ifxq-udm66fhReFeGOe2x_
+
+https://www.youtube.com/watch?v=h8iWRcmUE4M
+
+BOARDS:
+https://www.youtube.com/watch?v=phZIV-UzXjA
